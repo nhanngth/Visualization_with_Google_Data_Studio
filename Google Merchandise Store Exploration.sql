@@ -231,5 +231,5 @@ LEFT JOIN (
     FROM `data-to-insights.ecommerce.categories`
     ORDER BY productSKU, rnk )
   WHERE rnk = 1 ) c -- Get categories
-on a.productSKU = c.productSKU
+ON a.productSKU = c.productSKU
 GROUP BY a.channelGrouping, a.country, a.date, category, a.v2ProductName, b.v2ProductName
